@@ -3,6 +3,7 @@ plugins {
     id("org.jetbrains.kotlin.android")
     kotlin("kapt")
     id("com.google.dagger.hilt.android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -39,15 +40,6 @@ android {
     }
 }
 
-buildscript {
-    repositories {
-        google()
-    }
-    dependencies {
-        classpath("androidx.navigation:navigation-safe-args-gradle-plugin:2.7.6")
-    }
-}
-
 dependencies {
 
     implementation("androidx.core:core-ktx:1.12.0")
@@ -73,7 +65,6 @@ dependencies {
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
     implementation ("androidx.lifecycle:lifecycle-extensions:2.2.0")
     implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.7.0")
-    implementation ("androidx.lifecycle:lifecycle-livedata-ktx:2.7.0")
 
     // Navigation
     implementation("androidx.navigation:navigation-fragment-ktx:2.7.6")

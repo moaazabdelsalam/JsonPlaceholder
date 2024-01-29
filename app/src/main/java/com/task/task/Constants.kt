@@ -1,5 +1,5 @@
 package com.task.task
 
 object Constants {
-    const val BASE_URL = ""
+    const val BASE_URL = "https://jsonplaceholder.typicode.com"
 }
